@@ -17,10 +17,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * ACF JSON: Save point
+ */
+add_filter( 'acf/settings/save_json', function( $path ) {
+    return plugin_dir_path( __FILE__ ) . 'acf-json';
+} );
+
+/**
+ * ACF JSON: Load point
+ */
+add_filter( 'acf/settings/load_json', function( $paths ) {
+    $paths[] = plugin_dir_path( __FILE__ ) . 'acf-json';
+    return $paths;
+} );
+
+/**
  * Initialiserer SEO-plugin'et, når WordPress er klar.
  */
 function faktaform_seo_init() {
     require_once plugin_dir_path( __FILE__ ) . 'inc/template-tags.php';
-    // Fremtidige inkluderinger for SEO kan tilføjes her.
+    require_once plugin_dir_path( __FILE__ ) . 'inc/schema-hooks.php';
 }
 add_action( 'init', 'faktaform_seo_init' );
