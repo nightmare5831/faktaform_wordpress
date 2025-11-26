@@ -1,0 +1,76 @@
+/* FaktaForm Eksperter: Specifikke styles for ekspert-profiler */
+
+/* Styling for CV-tidslinjen */
+.faktaform-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.faktaform-timeline-post {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.faktaform-timeline-post::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0073aa; /* WordPress' primære blå farve */
+    border: 2px solid #fff;
+}
+
+.faktaform-timeline-periode {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.faktaform-timeline-stilling {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 0.2em;
+}
+
+.faktaform-timeline-virksomhed {
+    font-style: italic;
+    color: #777;
+}
+
+.faktaform-timeline-beskrivelse {
+    margin-top: 0.5em;
+    font-size: 0.95em;
+}
+
+/* Styling for lister (specialer, profiler) */
+.faktaform-profil-liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faktaform-profil-liste li {
+    margin-bottom: 0.5em;
+}
+
+/* Styling for ekspertens profilbillede */
+.faktaform-ekspert-profilbillede {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.faktaform-get-ekspert-image {
+  /* Brug CSS-variablen, som PHP vil levere */
+  background-image: var(--bg-image-url);
+
+  /* Al den statiske styling hører til her */
+  background-size: cover;
+  background-position: center center;
+}

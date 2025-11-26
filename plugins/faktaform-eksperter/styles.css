@@ -1,0 +1,149 @@
+.faktaform-ekspert-billede {
+  /* Brug CSS-variablen, som PHP leverer */
+  background-image: var(--bg-image-url);
+
+  /* Al den statiske styling hører til her */
+  background-size: cover;
+  background-position: center center;
+
+  /* Tvinger containeren til at have en fornuftig form */
+  height: auto;
+  aspect-ratio: 1 / 1;
+
+  /* Tilføjet kant og afrundede hjørner */
+  border: 1px solid var(--contrast-3);
+  border-radius: 1rem;
+}
+
+/* --- Styling for CV Tidslinje (Robust Metode) --- */
+
+.faktaform-timeline {
+  position: relative;
+  padding-left: 4rem; /* Giver plads til prikker og årstal */
+}
+
+.faktaform-timeline-post {
+  display: flex;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Linjesegmentet, der forbinder prikkerne. */
+.faktaform-timeline-post::after {
+  content: '';
+  position: absolute;
+  left: calc(-2.5rem - 1px); /* Centrerer den 2px brede linje */
+  top: calc(0.5rem + 12px); 
+  /* RETTET: Strækker sig nu korrekt ned til den næste prik. */
+  bottom: calc(-2rem - 0.5rem); 
+  width: 2px;
+  background-color: var(--contrast-2);
+  z-index: 1; /* Lægger sig bag prikken */
+}
+
+/* Skjuler linjesegmentet på det allersidste element i tidslinjen. */
+.faktaform-timeline-post:last-child::after {
+  display: none;
+}
+
+/* Prikken på tidslinjen for hvert indlæg */
+.faktaform-timeline-post::before {
+  content: '';
+  position: absolute;
+  /* Justerer positionen for at centrere prikken perfekt på linjen */
+  left: calc(-2.5rem - 6px); /* Centrerer den 12px brede prik */
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--contrast-3);
+  background-color: var(--background); /* Bruger temaets baggrundsfarve */
+  box-sizing: border-box;
+  z-index: 2; /* Lægger sig foran linjesegmentet */
+}
+
+.faktaform-timeline-periode {
+  flex-basis: 8rem; /* Fast bredde til årstallet */
+  padding-right: 2rem;
+  text-align: right;
+  color: var(--contrast-3);
+}
+
+.faktaform-timeline-details {
+  flex: 1; /* Fylder resten af pladsen */
+}
+
+.faktaform-timeline-stilling {
+  font-weight: bold;
+}
+
+.faktaform-timeline-virksomhed {
+  font-size: 0.9em;
+}
+
+/* --- Styling for Specialer Liste --- */
+
+.faktaform-specialer-liste {
+  list-style-type: none; /* Fjerner standard prikker */
+  padding-left: 1rem; 
+  margin-left: 0; /* NYT: Nulstiller browserens standard-margin */
+}
+
+.faktaform-specialer-liste li {
+  position: relative;
+  /* 
+    JUSTER HER: Denne værdi styrer afstanden mellem '+' og teksten.
+    Gør tallet mindre for at rykke teksten tættere på plusset.
+  */
+  padding-left: 1.2em; /* Giver plads til '+' tegnet */
+  margin-bottom: 0.5em;
+}
+
+.faktaform-specialer-liste li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--contrast-3);
+  font-weight: bold;
+}
+
+/* --- Styling for Kundeudtalelser --- */
+
+.faktaform-udtalelse-post {
+  /* Nulstil WordPress' standard blockquote styling */
+  border-left: none;
+  padding: 0;
+  /* ÆNDRET: Tilføjet 1rem margin til venstre */
+  margin: 0 0 2em 1rem;
+
+  /* Sørg for at skrifttypen matcher resten af siden */
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic; /* Gør citatet kursiv for at adskille det visuelt */
+}
+
+.faktaform-udtalelse-post p {
+  margin-bottom: 0.5em; /* Lille afstand mellem citat og afsender */
+}
+
+.faktaform-udtalelse-post footer {
+  font-style: normal; /* Normal stil for afsenderen */
+  font-weight: bold;
+  color: var(--contrast-3); /* Lidt mørkere tekst for afsenderen */
+}
+
+/* Styling for den ydre container til udtalelser */
+.faktaform-udtaleser {
+  border-top: 1px solid var(--base-3);
+  padding-top: 2em; /* Giver lidt luft mellem stregen og den første udtalelse */
+  margin-top: 2em; /* Giver lidt luft over stregen */
+}
+
+/* --- Styling for Autoritative Profiler Liste --- */
+
+.faktaform-profiler-liste {
+  list-style-type: none; /* Fjerner standard prikker */
+  padding-left: 0;
+  margin-left: 0.5rem;
+}

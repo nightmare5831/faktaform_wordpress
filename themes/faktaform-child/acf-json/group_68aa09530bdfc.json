@@ -1,0 +1,190 @@
+{
+    "key": "group_68aa09530bdfc",
+    "title": "Modul koblinger",
+    "fields": [
+        {
+            "key": "field_68aa3f9c37589",
+            "label": "Faktaboks",
+            "name": "selector_faktaboks",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Vælg hvilket modul der skal tilknyttes.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_pattern_selector",
+                "id": ""
+            },
+            "choices": {
+                "": "--- Vælg et modul ---",
+                "415": "modul-brodtekst_SYNC",
+                "413": "modul-enkelt-billede_SYNC",
+                "410": "modul-faktaboks_SYNC",
+                "417": "modul-fremhaevet-citat_SYNC",
+                "443": "Modul: Kildeliste"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_68aa3fd85fd79",
+            "label": "Fremhævet Citat",
+            "name": "selector_fremhaevet_citat",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_pattern_selector",
+                "id": ""
+            },
+            "choices": {
+                "": "--- Vælg et modul ---",
+                "415": "modul-brodtekst_SYNC",
+                "413": "modul-enkelt-billede_SYNC",
+                "410": "modul-faktaboks_SYNC",
+                "417": "modul-fremhaevet-citat_SYNC",
+                "443": "Modul: Kildeliste"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_68aa403443314",
+            "label": "Brødtekst",
+            "name": "selector_brodtekst",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_pattern_selector",
+                "id": ""
+            },
+            "choices": {
+                "": "--- Vælg et modul ---",
+                "415": "modul-brodtekst_SYNC",
+                "413": "modul-enkelt-billede_SYNC",
+                "410": "modul-faktaboks_SYNC",
+                "417": "modul-fremhaevet-citat_SYNC",
+                "443": "Modul: Kildeliste"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_68ab089a41ed2",
+            "label": "Enkelt Billede",
+            "name": "selector_enkelt_billede",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_pattern_selector",
+                "id": ""
+            },
+            "choices": {
+                "": "--- Vælg et modul ---",
+                "415": "modul-brodtekst_SYNC",
+                "413": "modul-enkelt-billede_SYNC",
+                "410": "modul-faktaboks_SYNC",
+                "417": "modul-fremhaevet-citat_SYNC",
+                "443": "Modul: Kildeliste"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_68ac8ab7680c3",
+            "label": "Modul: Kildeliste",
+            "name": "selector_kildeliste",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_pattern_selector",
+                "id": ""
+            },
+            "choices": {
+                "": "--- Vælg et modul ---",
+                "415": "modul-brodtekst_SYNC",
+                "413": "modul-enkelt-billede_SYNC",
+                "410": "modul-faktaboks_SYNC",
+                "417": "modul-fremhaevet-citat_SYNC",
+                "443": "Modul: Kildeliste"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "modul_indstillinger"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1756138261
+}

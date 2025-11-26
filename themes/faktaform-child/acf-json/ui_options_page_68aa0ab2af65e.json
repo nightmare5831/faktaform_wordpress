@@ -1,0 +1,23 @@
+{
+    "key": "ui_options_page_68aa0ab2af65e",
+    "title": "Modul Indstillinger",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Modul Indstillinger",
+    "menu_slug": "modul_indstillinger",
+    "parent_slug": "faktaform-farvesystem",
+    "advanced_configuration": false,
+    "icon_url": "",
+    "menu_title": "",
+    "position": null,
+    "redirect": false,
+    "description": "",
+    "menu_icon": [],
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": false,
+    "modified": 1755974322
+}

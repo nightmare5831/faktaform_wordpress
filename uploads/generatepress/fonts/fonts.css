@@ -1,0 +1,19 @@
+:root {
+--gp-font--merriweather: "Merriweather";
+--gp-font--inter: "Inter";
+}
+
+@font-face {
+	font-display: auto;
+	font-family: "Merriweather";
+	font-style: normal;
+	font-weight: 300 900;
+	src: url('http://faktaform-master.local/wp-content/uploads/generatepress/fonts/merriweather/u-4e0qyriQwlOrhSvowK_l5UcA6zuSYEqOzpPe3HOZJ5eX1WtLaQwmYiSeqqJ-mXrVGjziE.woff2') format('woff2');
+}
+@font-face {
+	font-display: auto;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 100 900;
+	src: url('http://faktaform-master.local/wp-content/uploads/generatepress/fonts/inter/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0I5nvwU.woff2') format('woff2');
+}

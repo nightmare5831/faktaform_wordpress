@@ -1,0 +1,45 @@
+/*
+Theme Name: FaktaForm Child
+Theme URI: https://faktaform.dk
+Description: Et child theme til FaktaForm-platformen.
+Author: Thomas Kainø
+Author URI: https://faktaform.dk
+Template: generatepress
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Generelle Styles
+    1.1 - Body & Grundlæggende Typografi
+    1.2 - Knapper & Formular-elementer
+2.0 - Sidens Struktur
+    2.1 - Header & Navigation
+    2.2 - Footer
+3.0 - Globale Moduler & Hjælpeklasser
+    3.1 - Justering & Afstand
+--------------------------------------------------------------*/
+
+
+/* 1.0 - Generelle Styles
+--------------------------------------------------------------*/
+body {
+    line-height: 1.8; /* Forbedrer læsbarheden af lange tekster */
+}
+
+
+/* 3.0 - Globale Moduler & Hjælpeklasser
+--------------------------------------------------------------*/
+/* Denne klasse bruges til at skjule elementer visuelt, 
+   men holde dem tilgængelige for skærmlæsere. */
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

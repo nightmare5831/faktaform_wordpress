@@ -1,0 +1,466 @@
+{
+    "key": "group_689c7627bc13a",
+    "title": "Artikel Data",
+    "fields": [
+        {
+            "key": "field_689c762a74ac7",
+            "label": "Underrubrik",
+            "name": "Underrubrik",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_689c7838e309f",
+            "label": "Artikelindhold",
+            "name": "artikel_indhold",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_689dba3e82d76": {
+                    "key": "layout_689dba3e82d76",
+                    "name": "brodtekst",
+                    "label": "Brødtekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_689dba4e82d78",
+                            "label": "brodtekst_indhold",
+                            "name": "brodtekst_indhold",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_689c787aa173f": {
+                    "key": "layout_689c787aa173f",
+                    "name": "faktaboks",
+                    "label": "Faktaboks",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a5bbbd24dd9",
+                            "label": "Faktaboks rubrik",
+                            "name": "faktaboks_rubrik",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_689c78dee30a0",
+                            "label": "Faktaboks_indhold",
+                            "name": "faktaboks_indhold",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68b589bdec381",
+                            "label": "Justering",
+                            "name": "modul_justering",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "Vælg modulets justering i forhold til brødteksten. 'Venstre' og 'Højre' vil lade teksten ombryde.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Midterstillet",
+                                "left": "Venstrestillet",
+                                "right": "Højrestillet"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_689c824249667": {
+                    "key": "layout_689c824249667",
+                    "name": "fremhaevet_citat",
+                    "label": "Fremhævet Citat",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_689c828c49669",
+                            "label": "Citat_tekst",
+                            "name": "citat_tekst",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_689c82a14966a",
+                            "label": "Kilde",
+                            "name": "kilde",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_68b58bb0069ed",
+                            "label": "Justering",
+                            "name": "modul_justering",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "Vælg modulets justering i forhold til brødteksten. 'Venstre' og 'Højre' vil lade teksten ombryde.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Midterstillet",
+                                "left": "Venstrestillet",
+                                "right": "Højrestillet"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68ab04c0bbdae": {
+                    "key": "layout_68ab04c0bbdae",
+                    "name": "enkelt_billede",
+                    "label": "Enkelt billede",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68ab04fbbbdb0",
+                            "label": "enkelt_billede_upload",
+                            "name": "enkelt_billede_upload",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_68b58c14a4c4e",
+                            "label": "Justering",
+                            "name": "modul_justering",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "Vælg modulets justering i forhold til brødteksten. 'Venstre' og 'Højre' vil lade teksten ombryde.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Midterstillet",
+                                "left": "Venstrestillet",
+                                "right": "Højrestillet"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Tilføj indhold"
+        },
+        {
+            "key": "field_68ac75e6e335a",
+            "label": "Kildeliste",
+            "name": "kildeliste",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Tilføj kilder",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68ac7632e335b",
+                    "label": "Navn på kilde",
+                    "name": "navn_pa_kilde",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                },
+                {
+                    "key": "field_68ac82d6a1589",
+                    "label": "Link til kildes profil (fx Linkedin, blog eller profilside på universitet)",
+                    "name": "kilde_kilde_url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                },
+                {
+                    "key": "field_68ac776ce335c",
+                    "label": "Navn på publikation",
+                    "name": "navn_pa_publikation",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                },
+                {
+                    "key": "field_68ac77afe335e",
+                    "label": "Link til publikation",
+                    "name": "link_til_publikation",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                },
+                {
+                    "key": "field_68ac77a0e335d",
+                    "label": "Navn på institut\/virksomhed",
+                    "name": "navn_pa_institutvirksomhed",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                },
+                {
+                    "key": "field_68ac77cae335f",
+                    "label": "Link til institut\/virksomhed",
+                    "name": "link_til_institutvirksomhed",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_68ac75e6e335a"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "display_title": "",
+    "modified": 1763567076
+}

@@ -1,0 +1,154 @@
+.wrap {
+    max-width: 960px;
+}
+
+.faktaform-controls {
+    margin-bottom: 40px;
+}
+
+.faktaform-controls fieldset {
+    border: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.faktaform-controls label {
+    margin-right: 20px;
+}
+
+.faktaform-palette-intro {
+    max-width: 600px;
+    font-style: italic;
+    color: #555;
+}
+
+.faktaform-palette-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .faktaform-palette-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.faktaform-palette-family h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.faktaform-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faktaform-color-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Løft den aktive farveblok op, så farvevælgeren ikke dækkes af efterfølgende elementer. */
+.faktaform-color-block.is-editing {
+    z-index: 10;
+}
+
+.color-swatch {
+    position: relative; /* Nødvendig for at placere temp-input korrekt */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.color-name {
+    font-weight: bold;
+}
+
+.color-hex {
+    font-family: monospace;
+    color: #555;
+}
+
+.faktaform-edit-color-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #555;
+    cursor: pointer;
+    display: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.faktaform-color-block:hover .faktaform-edit-color-btn {
+    display: inline-flex;
+}
+
+.faktaform-color-block.is-editing .faktaform-edit-color-btn {
+    display: none !important;
+}
+
+/* Hoved-farvevælger (top) */
+.faktaform-color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.faktaform-color-picker-wrapper .wp-color-result {
+    display: none;
+}
+
+.faktaform-color-picker-wrapper .wp-picker-holder {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+}
+
+.faktaform-custom-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+}
+.faktaform-custom-swatch:hover {
+    border-color: #999;
+}
+
+.faktaform-hex-display {
+    font-family: monospace;
+    width: 80px;
+}
+
+/* Palette-farvevælgere (de 7) */
+.faktaform-color-block .wp-color-result {
+    display: none;
+}
+
+/* Den midlertidige container til WP's input-felt. */
+.color-swatch .temp-color-picker-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}

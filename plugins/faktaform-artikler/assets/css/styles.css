@@ -1,0 +1,418 @@
+/* FaktaForm Artikler: Specifikke styles for artikel-moduler */
+
+/* Generel wrapper for alle moduler fra Flexible Content */
+.faktaform-module-wrapper {
+    /* Sæt en maksimal bredde, så modulerne ikke bliver for brede.
+       Denne værdi bør matche din sides normale indholdsbredde. */
+    max-width: 720px; 
+    margin-bottom: 2em; /* Giver luft mellem modulerne */
+
+    /* Standard-justering er centreret */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for Kildelisten */
+.faktaform-kildeliste-hook ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.faktaform-kildeliste-hook li {
+    margin-bottom: 0.75em;
+}
+
+/* =============================================
+ * Globale Overrides & Hjælpeklasser
+ * ============================================= */
+.Citat_modul blockquote {
+    border-left: none;
+    padding-left: 0;
+}
+body .faktaform-accordion.is-open .faktaform-accordion__panel {
+    max-height: 2000px !important;
+}
+
+/* =============================================
+ * Styling for Billede-modul i Artikel
+ * ============================================= */
+.faktaform-artikel-billede {
+    display: block;
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+}
+
+/* =============================================
+ * Interaktiv Faktaboks
+ * ============================================= */
+.fakta-accordion {
+    position: relative;
+    padding: 24px 24px 16px 24px;
+    background-color: var(--base-2);
+    border: 1px solid var(--base-3);
+    border-radius: 1rem;
+    text-align: left; 
+    font-size: 0.9rem;
+}
+.fakta-accordion__title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.fakta-accordion__panel {
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    position: relative; 
+}
+.fakta-accordion__panel-inner {
+    padding-bottom: 1em; /* Giver luft i bunden af indholdet */
+}
+.fakta-accordion.is-open .fakta-accordion__panel {
+    max-height: 2000px;
+}
+.fakta-accordion__panel::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent 10%, var(--base-2));
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.fakta-accordion.is-open .fakta-accordion__panel::after,
+.fakta-accordion.no-overflow .fakta-accordion__panel::after {
+    display: none;
+}
+.fakta-accordion__toggle {
+    display: none;
+    width: fit-content;
+    margin: 0;
+    padding: 4px;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+.fakta-accordion.has-overflow .fakta-accordion__toggle-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.fakta-accordion.has-overflow .fakta-accordion__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fakta-accordion__toggle svg {
+    transition: transform 0.3s ease;
+    color: var(--contrast);
+}
+.fakta-accordion.is-open .fakta-accordion__toggle svg {
+    transform: rotate(180deg);
+}
+
+/* =============================================
+ * Justering af Moduler (Faktaboks, Billede, Citat etc.)
+ * ============================================= */
+
+.faktaform-module-wrapper.faktaform-align-left {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    max-width: 45%;
+    /* Nulstil auto-margin fra den generelle wrapper-regel */
+    margin-left: 0; 
+}
+
+.faktaform-module-wrapper.faktaform-align-right {
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    max-width: 45%;
+    /* Nulstil auto-margin fra den generelle wrapper-regel */
+    margin-right: 0;
+}
+
+@media (min-width: 950px) {
+    .faktaform-module-wrapper.faktaform-align-left {
+        width: 400px;
+        max-width: none;
+        margin-left: -150px;
+    }
+    .faktaform-module-wrapper.faktaform-align-right {
+        width: 400px;
+        max-width: none;
+        margin-right: -150px;
+    }
+}
+.entry-content {
+    display: flow-root;
+}
+
+
+/* =============================================
+ * Styling for Fremhævet Billede
+ * ============================================= */
+.faktaform-featured-content-hook {
+    margin-top: 0;
+    padding-bottom: 0.5em; 
+}
+.faktaform-featured-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.faktaform-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.faktaform-featured-content-hook .faktaform-featured-caption {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.25em;
+}
+.faktaform-featured-caption .wp-element-caption {
+    color: var(--contrast-2);
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============================================
+ * Styling for Billede på Arkiv-sider
+ * ============================================= */
+.faktaform-archive-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.faktaform-archive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =============================================
+ * Styling for overskrift Arkiv-sider
+ * ============================================= */
+
+.arkiv-post-overskrift a,
+.arkiv-post-overskrift a:link,
+.arkiv-post-overskrift a:visited {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    color: var(--contrast); 
+    line-height: 1em;
+    letter-spacing: -0.05rem;
+    font-weight: normal;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none; 
+}
+.arkiv-post-overskrift a:hover,
+.arkiv-post-overskrift a:focus {
+    color: var(--contrast-2);
+    text-decoration: none; 
+}
+/* =============================================
+ * Styling for underrubrik#1 Arkiv-sider
+ * ============================================= */
+.arkiv-post-underrubrik {
+    font-family: 'Inter', sans-serif; /* Tilføjet sans-serif fallback */
+    font-size: 1.2rem;
+    line-height: 1.4rem; 
+    letter-spacing: normal;
+    font-weight: normal; 
+    text-transform: none; 
+    font-style: normal;
+    color: var(--contrast);
+}
+.arkiv-post-underrubrik a,
+.arkiv-post-underrubrik a:link,
+.arkiv-post-underrubrik a:visited {
+     color: var(--contrast-2);
+    text-decoration: none;
+}
+
+/* =============================================
+ * Styling for Byline
+ * ============================================= */
+
+/* Først styler vi selve containeren til at have den korrekte størrelse */
+.faktaform-person-billede {
+    width: 60px;
+    height: 60px;
+    /* Sikrer at containeren ikke har unødvendig padding */
+    padding: 0; 
+}
+
+/* Derefter styler vi billedet INDENI containeren */
+.faktaform-person-billede img {
+    width: 100%; /* Fyld hele containerens bredde (60px) */
+    height: 100%; /* Fyld hele containerens højde (60px) */
+    border-radius: 50%;
+    object-fit: cover;
+    /* Vigtigt: Sørger for at billedet opfører sig korrekt i layoutet */
+    display: block; 
+}
+
+/* =============================================
+ * Intelligent Byline Component
+ * ============================================= */
+
+/* --- Layout for TO personer --- */
+.faktaform-byline__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em 2em;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 0.5rem auto;
+}
+
+.faktaform-byline__grid .faktaform-byline__date {
+    grid-column: 1 / -1; /* Spænd over begge kolonner */
+}
+
+/* --- Layout for ÉN person --- */
+.faktaform-byline-wrapper--single {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrér person-blok og dato horisontalt */
+    gap: 1em; /* Styr afstanden mellem person og dato */
+    margin-bottom: 0.5em;
+}
+
+/* --- Fælles styling for begge layouts --- */
+.faktaform-byline__person {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-width: 320px; 
+}
+
+.faktaform-byline__person--ekspert {
+    flex-direction: row-reverse; /* Billede til venstre */
+}
+
+.faktaform-byline__person--single.faktaform-byline__person--journalist {
+    flex-direction: row-reverse; /* Billede til venstre */
+}
+
+.faktaform-byline__details--right {
+    text-align: right;
+}
+
+.faktaform-byline-wrapper--single .faktaform-byline__details--right {
+    text-align: left;
+}
+
+/* KORRIGERET: Produktionsklar styling for datoer */
+.faktaform-byline__date,
+.faktaform-get-post-dates .post-date,
+.faktaform-get-post-dates .post-date-separator {
+    font-size: 0.7rem;
+    color: #555;
+}
+
+/* Specifik styling KUN for byline-datoen */
+.faktaform-byline__date {
+    text-align: center;
+    margin-top: 0;
+}
+
+.faktaform-byline__image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.faktaform-byline__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.faktaform-byline__details p {
+    margin: 0.1rem 0;
+    line-height: 1.25;
+}
+
+.faktaform-byline__rolle {
+    font-size: 0.8rem;
+    color: var(--contrast-2);
+}
+
+.faktaform-byline__navn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--contrast);
+}
+.faktaform-byline__navn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.faktaform-byline__stilling {
+    font-size: 0.75rem;
+    color: var(--contrast-3);
+
+}
+
+/* Responsivt breakpoint for mobil */
+@media (max-width: 768px) {
+    .faktaform-featured-image {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .faktaform-byline__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5em;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .faktaform-byline__person {
+        flex-direction: row-reverse !important; 
+        text-align: left !important;
+        max-width: 320px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .faktaform-byline__details--right {
+        text-align: left;
+    }
+
+    /* Nulstil justering for moduler på mobil */
+    .faktaform-module-wrapper.faktaform-align-left,
+    .faktaform-module-wrapper.faktaform-align-right {
+        float: none;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
