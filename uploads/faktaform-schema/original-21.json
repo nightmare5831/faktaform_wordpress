@@ -1,0 +1,90 @@
+{
+    "publisher": {
+        "@type": [
+            "Organization",
+            "Person"
+        ],
+        "@id": "http://localhost/dev_fakta/#person",
+        "name": "MasterFaktaForm",
+        "url": "http://localhost/dev_fakta",
+        "logo": {
+            "@type": "ImageObject",
+            "@id": "http://localhost/dev_fakta/#logo",
+            "url": "http://localhost/dev_fakta/wp-content/uploads/2025/08/FaktaForm_Logo_menu-150x60.webp",
+            "contentUrl": "http://localhost/dev_fakta/wp-content/uploads/2025/08/FaktaForm_Logo_menu-150x60.webp",
+            "caption": "MasterFaktaForm",
+            "inLanguage": "en-US"
+        },
+        "image": {
+            "@id": "http://localhost/dev_fakta/#logo"
+        }
+    },
+    "WebSite": {
+        "@type": "WebSite",
+        "@id": "http://localhost/dev_fakta/#website",
+        "url": "http://localhost/dev_fakta",
+        "name": "MasterFaktaForm",
+        "publisher": {
+            "@id": "http://localhost/dev_fakta/#person"
+        },
+        "inLanguage": "en-US"
+    },
+    "primaryImage": {
+        "@type": "ImageObject",
+        "@id": "http://localhost/dev_fakta/wp-content/uploads/2025/08/test_dummy_pic.webp",
+        "url": "http://localhost/dev_fakta/wp-content/uploads/2025/08/test_dummy_pic.webp",
+        "width": 1920,
+        "height": 1281,
+        "caption": "",
+        "inLanguage": "en-US"
+    },
+    "WebPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost/dev_fakta/test/#webpage",
+        "url": "http://localhost/dev_fakta/test/",
+        "name": "Alt er computer - Master",
+        "datePublished": "2025-08-13T12:45:55+00:00",
+        "dateModified": "2025-11-20T14:13:32+00:00",
+        "isPartOf": {
+            "@id": "http://localhost/dev_fakta/#website"
+        },
+        "primaryImageOfPage": {
+            "@id": "http://localhost/dev_fakta/wp-content/uploads/2025/08/test_dummy_pic.webp"
+        },
+        "inLanguage": "en-US"
+    },
+    "ProfilePage": {
+        "@type": "Person",
+        "@id": "http://localhost/dev_fakta/author/thomas/",
+        "name": "Thomas",
+        "description": "",
+        "url": "http://localhost/dev_fakta/author/thomas/",
+        "image": {
+            "@type": "ImageObject",
+            "@id": "https://secure.gravatar.com/avatar/9b0d720dde51d1b8f15796f56a669625e723b38efcd1599326ad16d4e74c32d7?s=96&d=mm&r=g",
+            "url": "https://secure.gravatar.com/avatar/9b0d720dde51d1b8f15796f56a669625e723b38efcd1599326ad16d4e74c32d7?s=96&d=mm&r=g",
+            "caption": "Thomas",
+            "inLanguage": "en-US"
+        },
+        "sameAs": [
+            "https://xn--kain-jra.dk/"
+        ]
+    },
+    "richSnippet": {
+        "@type": "BlogPosting",
+        "headline": "Alt er computer - Master",
+        "keywords": "",
+        "datePublished": "2025-08-13T12:45:55+00:00",
+        "dateModified": "2025-11-20T14:13:32+00:00",
+        "isPrimary": true,
+        "articleSection": "Klummer",
+        "author": {
+            "@id": "http://localhost/dev_fakta/author/thomas/",
+            "name": "Thomas"
+        },
+        "publisher": {
+            "@id": "http://localhost/dev_fakta/#person"
+        },
+        "name": "Alt er computer - Master"
+    }
+}
